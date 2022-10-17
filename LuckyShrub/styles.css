@@ -1,0 +1,146 @@
+/* --- all --- */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+/* --- navbar --- */
+
+.navbar {
+    display: flex;
+    align-items: stretch; /*default*/
+    justify-content: space-around;
+    background-color: #3B585B;
+}
+
+.navbar li {
+    display: inline-block;
+    flex: 0 1 auto;
+    text-align: center;
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    margin: 5px 10px 8px 10px; 
+    font-weight: bold;
+
+    background: linear-gradient(white, white) center bottom;
+    background-size: 0% 2px;    /* width:0% height:2px */
+    background-repeat: no-repeat;   /*what is this*/
+    transition: all 0.4s;
+}
+
+.navbar li a {
+    color: white;
+}
+
+.navbar li:hover {
+    background-size: 100% 2px;
+}
+
+
+/* --- large promo --- */
+
+.large-promo-container h1 {
+    font-size: 40px;
+    color: #985F90;
+    text-align: center;
+}
+
+.large-promo-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.large-promo-container p {
+    text-align: center;
+}
+
+
+/* --- small promo --- */
+
+.small-promo-container {
+    display: flex;
+    align-items: stretch; /*default*/
+    justify-content: space-evenly;
+}
+
+.small-promo-container article {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.small-promo-container h1 {
+    color: #985F90;
+    text-align: left;
+}
+
+.small-promo-container img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* --- small promo badge --- */
+
+.badge {
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(#BC9DC7, #BC9DC7) center top;
+    background-size: 100% 0;
+    background-repeat: no-repeat;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.small-promo:hover .badge {
+    background-size: 100% 100%;
+}
+
+/* --- footer --- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer div {
+    flex: 1;
+}
+
+.copyright p {
+    font-weight: lighter;
+    color: #3B585B;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+
+/* --- images --- */
+
+header .logo {
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .logo {
+    max-width: 40px;
+}
